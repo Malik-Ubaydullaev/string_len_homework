@@ -7,4 +7,5 @@ def main(s1,s2):
     Returns:
         total length of strings
     """
-    return
+    result = len(s1) + len(s2)
+    return result
