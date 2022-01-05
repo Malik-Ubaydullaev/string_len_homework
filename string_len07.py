@@ -18,12 +18,20 @@ def main(s1,s2,s3):
         result = "[" + ''
     
     if a2 % 2 != 0:
-        result += ', ' + s2
+        if a1 % 2 != 0:
+            result += ", " + s2
+        else:
+            result += s2
     else:
         result += ''
         
     if a3 % 2 != 0:
-        result += ', ' + s3 + "]"
+        if a2 % 2 != 0:
+            result += ", " + s3 + "]"
+        elif a1 % 2 != 0 and a2 % 2 == 0:
+            result += ", " + s3 + "]"
+        else:
+            result += s3 + "]"
     else:
         result += ']'
     return result
