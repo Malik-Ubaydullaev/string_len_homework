@@ -8,7 +8,7 @@ def main(s1,s2):
         shortest string
     """
     if len(s1) < len(s2):
-        result = len(s1)
+        result = s1
     else:
-        result = len(s2)
+        result = s2
     return result
